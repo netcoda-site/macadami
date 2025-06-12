@@ -1,4 +1,5 @@
-document.querySelectorAll('.faq-item').forEach(item => {
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.faq-item').forEach(item => {
   const question = item.querySelector('.faq-question');
   const answer = item.querySelector('.faq-answer');
   const icon = item.querySelector('.icon-x');
@@ -37,3 +38,8 @@ document.querySelectorAll('.faq-item').forEach(item => {
     isOpen = !isOpen;
   });
 });
+  });
+});
+
+
+
